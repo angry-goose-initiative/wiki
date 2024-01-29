@@ -1,0 +1,29 @@
+{
+  head: {
+    text: 'LIMP Example',
+    tick: 0
+  },
+  
+  signal: [
+    {name: 'clk', 			wave: 'P........'},
+    
+    ['M2S',
+      {name: 'vld', 		wave: '01..0.1.0'},
+      {name: 'cmd[?:0]', 	wave: 'x3..x.4.x', data: ['RD', 'WR']},
+      {name: 'siz[1:0]', 	wave: 'x3..x.4.x', data: ["Word", "Byte"]},
+      {name: 'adr[33:0]', 	wave: 'x3..x.4.x', data: ["a1", "a2"]},
+     {name: 'wda[31:0]', 	wave: 'x.....4.x', data: ["d2"]}
+    ],
+    {},
+    
+    ['S2M',
+      {name: 'rdy', 		wave: '0..10..10'},
+      {name: 'ill', 		wave: 'x..0x..0x'},
+     {name: 'rda[31:0]', 	wave: 'x..3x....', data:["d1"]}
+    ]
+  ],
+  
+  config: {
+    //hscale: 2
+  }
+}
