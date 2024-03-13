@@ -1,0 +1,35 @@
+{
+head: {text: 'LETC/Conductor Boot Sequence'},
+signal: [
+  {},
+  ['Software (not actual signals)',
+   {name: 'Conductor CLI State',  				wave: 'x.....|..|2|2............2....', data: 'A B C'},
+    {name: 'Conductor ARM State',  				wave: 'x.....|22|.|2.|2..|2..|2|2....', data: 'Init A B C D E F'},
+  ],
+  {},{},
+  ['Hardware (not actual signals)',
+    {name: 'Conductor ARM Memory (OCM)',  		wave: 'x....2........................', data: 'Programmed'},
+    {name: 'UART0',  				            wave: 'x.......2.....................', data: 'Configured'},
+    {name: 'UART1',  				            wave: 'x............2................', data: 'Configured_(Maybe?)'},
+    {name: 'PL',  				                wave: 'x............2................', data: 'Programmed_With_Bitstream'},
+    {name: 'DRAM CTRL/PHY',  				    wave: 'x............2................', data: 'Configured', node: '.............f'},
+    {name: 'AXI IFs/Other PS-PL IFs',  			wave: 'x.....................2.......', data: 'Configured', node: '......................c'},
+    {name: 'LETC Memory (DRAM)',  				wave: 'x.............2...............', data: 'Programmed', node: '..............g'},
+    {name: 'LETC Begins Executing Insts',  		wave: '0..........................1..'},
+  ],
+  {},{},
+  ['Hardware',
+    {name: 'Board Oscillator (PS CLK) [50MHz]', wave: 'n|....', period: 5},
+    {name: 'i_raw_125_clk (debug) [125MHz]', 	wave: 'x.n............', period: 2},
+   {name: 'FCLK_CLK0 (letc_clk) [250MHz]', 	wave: 'x...............n.............'},
+    {name: 'FCLK_RESET0_N (async)', 			wave: 'x................0.....|1.....', node: '.................a......d'},
+    {name: 'FCLK_RESET0_N_sync (letc_rst_n)', 	wave: 'x...................0.....|1..', node: '....................b'},
+  ],
+],
+edge: [
+   'a~>b',
+   'b~>c',
+   'c~>d',
+   'f~>g'
+]
+}
