@@ -1,0 +1,117 @@
+<mxfile host="Electron" modified="2024-03-31T20:15:44.459Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="9ydF7sHG1vVTM3mJ4nxd" version="24.0.4" type="device">
+  <diagram name="Page-1" id="mX2h6JksRinRSsMRI6-A">
+    <mxGraphModel dx="1313" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oQ6gl76hAbbXNXq-nnLv-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="90" y="110" width="900" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="oQ6gl76hAbbXNXq-nnLv-2" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;LETC Core Cache&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="110" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-1" value="SRAM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="275" width="290" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-3" value="&lt;div&gt;TODO&lt;/div&gt;Will the SRAM have one cycle or two cycles of latency (BRAM or LUTRAM)?" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="485" y="570" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-6" value="V" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="275" width="40" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-7" value="D" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="275" width="40" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-8" value="TODO cache specs:&lt;br&gt;Writeback, ways, line length, associativity/direct mapped&lt;div&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="640" y="570" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-9" value="Tag" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="275" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-10" value="Data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="275" width="130" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-12" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="340" width="370" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-13" value="Line offset" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="415" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-14" value="Compared against tag" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="415" width="85" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-15" value="&lt;div&gt;Cache Access Logic&lt;/div&gt;How physical address is processed" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="185" y="375" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-16" value="SRAM Index" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="265" y="415" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-17" value="" style="curved=1;endArrow=classic;html=1;rounded=0;startArrow=classic;startFill=1;exitX=0;exitY=0.644;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="oQ6gl76hAbbXNXq-nnLv-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="500" as="sourcePoint" />
+            <mxPoint x="150" y="450" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="150" y="500" />
+              <mxPoint x="100" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-22" value="Cache I/F" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dpsM1MxhAgp5L9eeS-YR-17">
+          <mxGeometry x="0.1759" y="-1" relative="1" as="geometry">
+            <mxPoint x="2" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-19" value="TODO define cache interface (should be constant regardless of the cache specs/size/ways/&lt;div&gt;length/associativity&lt;div&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="120" y="500" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-20" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.876;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="dpsM1MxhAgp5L9eeS-YR-12" target="dpsM1MxhAgp5L9eeS-YR-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="414" y="405" as="sourcePoint" />
+            <mxPoint x="464" y="355" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="464" y="405" />
+              <mxPoint x="414" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="dpsM1MxhAgp5L9eeS-YR-21" target="dpsM1MxhAgp5L9eeS-YR-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.875;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="dpsM1MxhAgp5L9eeS-YR-21" target="oQ6gl76hAbbXNXq-nnLv-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="180" />
+              <mxPoint x="870" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-25" value="LIMP I/F" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dpsM1MxhAgp5L9eeS-YR-24">
+          <mxGeometry x="0.0463" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-21" value="Cache miss /&lt;div&gt;writeback /&lt;/div&gt;&lt;div&gt;writethrough FSM&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="110" width="210" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-26" value="VERY ROUGH,&lt;div&gt;&lt;/div&gt;&lt;div&gt;we need to design the cache interface and all of the cache specs&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="220" y="190" width="130" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.625;exitY=0.2;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.13;entryY=0.77;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="dpsM1MxhAgp5L9eeS-YR-12" target="dpsM1MxhAgp5L9eeS-YR-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="321" y="330" />
+              <mxPoint x="390" y="330" />
+              <mxPoint x="390" y="250" />
+              <mxPoint x="547" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dpsM1MxhAgp5L9eeS-YR-28" value="Coordination /&lt;div&gt;Arbitration potentially&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="dpsM1MxhAgp5L9eeS-YR-27">
+          <mxGeometry x="-0.2863" y="5" relative="1" as="geometry">
+            <mxPoint x="29" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
